@@ -78,5 +78,6 @@ Sample listings and images are included in the demo data.
 
 ---
 
-## 📞 Contact
+## 📞 Contact Us
 For queries, contact the project maintainer. 
+
