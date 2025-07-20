@@ -1,0 +1,22 @@
+# .gitignore
+# Ignore config file containing secrets
+includes/config.php
+
+# Ignore environment files
+.env
+
+# Ignore uploads and other sensitive folders
+uploads/
+
+# Ignore node_modules and build outputs
+node_modules/
+dist/
+
+# Ignore OS and IDE files
+.DS_Store
+Thumbs.db
+.vscode/
+
+
+#this is the file of node that should be deleted later
+src/

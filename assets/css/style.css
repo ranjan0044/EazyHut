@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+/* EazyHut Custom Styles for React-like UI */
+:root {
+  --eazy-primary: #2563eb;
+  --eazy-secondary: #14b8a6;
+  --eazy-accent: #6366f1;
+  --eazy-bg: #f8fafc;
+  --eazy-dark: #111827;
+  --eazy-gray: #6b7280;
+}
+body, html {
+  font-family: 'Inter', 'Segoe UI', 'Roboto', Arial, sans-serif;
+  font-weight: 400;
+  color: var(--eazy-dark);
+}
+.login-card, .login-card * {
+  font-family: 'Inter', 'Segoe UI', 'Roboto', Arial, sans-serif;
+}
+.login-tabs {
+  transition: background 0.2s;
+}
+.login-tab {
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+}
+.search-btn, .btn, .form-control {
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s, border 0.2s;
+}
+.hero-section {
+  background: linear-gradient(120deg, #e0e7ff 0%, #f0fdfa 100%);
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.hero-title {
+  font-size: 2.8rem;
+  font-weight: 800;
+  letter-spacing: -1px;
+  color: #111827;
+}
+.hero-title .gradient {
+  background: linear-gradient(90deg, var(--eazy-primary), var(--eazy-secondary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.hero-subtitle {
+  font-size: 1.25rem;
+  color: var(--eazy-gray);
+  margin-bottom: 2rem;
+}
+.search-card {
+  background: #fff;
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 32px 0 rgba(16,30,54,0.10);
+  padding: 2rem 1.5rem 1.5rem 1.5rem;
+  margin-bottom: 2rem;
+}
+.search-card .form-label {
+  font-weight: 500;
+  color: #374151;
+}
+.search-btn {
+  background: linear-gradient(90deg, var(--eazy-primary), var(--eazy-secondary));
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 0.75rem;
+  padding: 0.9rem 0;
+  box-shadow: 0 2px 8px 0 rgba(16,30,54,0.10);
+  transition: background 0.2s;
+}
+.search-btn:hover {
+  background: linear-gradient(90deg, #1d4ed8, #0d9488);
+}
+.stats-row {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+.stats-row .stat {
+  text-align: center;
+}
+.stats-row .stat-number {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.2rem;
+}
+.stats-row .stat-1 { color: var(--eazy-primary); }
+.stats-row .stat-2 { color: var(--eazy-secondary); }
+.stats-row .stat-3 { color: var(--eazy-accent); }
+.stats-row .stat-4 { color: #0ea5e9; }
+
+/* Featured Cards */
+.featured-section {
+  padding: 3rem 0 2rem 0;
+  background: #f8fafc;
+}
+.featured-title {
+  font-size: 2.2rem;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+.featured-subtitle {
+  text-align: center;
+  color: var(--eazy-gray);
+  margin-bottom: 2rem;
+}
+.featured-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+.featured-card {
+  background: #fff;
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 32px 0 rgba(16,30,54,0.10);
+  overflow: hidden;
+  width: 340px;
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+.featured-card:hover {
+  box-shadow: 0 8px 40px 0 rgba(16,30,54,0.16);
+  transform: translateY(-4px) scale(1.02);
+}
+.featured-card-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+.featured-badges {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  display: flex;
+  gap: 0.5rem;
+}
+.badge-featured {
+  background: linear-gradient(90deg, var(--eazy-primary), var(--eazy-secondary));
+  color: #fff;
+  font-size: 0.85rem;
+  font-weight: 600;
+  border-radius: 1rem;
+  padding: 0.25rem 0.9rem;
+}
+.badge-gender-male {
+  background: #dbeafe;
+  color: #2563eb;
+  font-weight: 600;
+  border-radius: 1rem;
+  padding: 0.25rem 0.9rem;
+}
+.badge-gender-female {
+  background: #fce7f3;
+  color: #db2777;
+  font-weight: 600;
+  border-radius: 1rem;
+  padding: 0.25rem 0.9rem;
+}
+.badge-gender-unisex {
+  background: #ede9fe;
+  color: #7c3aed;
+  font-weight: 600;
+  border-radius: 1rem;
+  padding: 0.25rem 0.9rem;
+}
+.featured-card-content {
+  padding: 1.5rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.featured-card-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 0.3rem;
+}
+.featured-card-location {
+  color: var(--eazy-gray);
+  font-size: 0.98rem;
+  margin-bottom: 0.7rem;
+}
+.featured-card-price {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--eazy-dark);
+}
+.featured-card-amenities {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+.featured-card-amenity {
+  background: #f1f5f9;
+  color: #334155;
+  border-radius: 1rem;
+  padding: 0.25rem 0.8rem;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+.featured-card-actions {
+  display: flex;
+  gap: 0.7rem;
+}
+.featured-card-actions .btn {
+  flex: 1;
+  font-weight: 600;
+  border-radius: 0.7rem;
+  font-size: 1rem;
+  padding: 0.7rem 0;
+}
+.featured-card-actions .btn-primary {
+  background: linear-gradient(90deg, var(--eazy-primary), var(--eazy-secondary));
+  border: none;
+}
+.featured-card-actions .btn-outline-primary {
+  border: 2px solid var(--eazy-primary);
+  color: var(--eazy-primary);
+  background: #fff;
+}
+.featured-card-actions .btn-outline-primary:hover {
+  background: #e0e7ff;
+}
+
+/* --- LOGIN/REGISTER CARD REACT-LIKE STYLES --- */
+.login-card {
+  max-width: 370px;
+  width: 100%;
+  background: #fff;
+  border-radius: 1.7rem;
+  box-shadow: 0 8px 32px 0 rgba(16,30,54,0.13);
+  padding: 2.2rem 1.7rem 1.7rem 1.7rem;
+  margin: 1.5rem 0;
+}
+.login-tabs {
+  display: flex;
+  background: #f3f4f6;
+  border-radius: 2.5rem;
+  padding: 0.22rem;
+  margin-bottom: 1.5rem;
+  gap: 0.22rem;
+  box-shadow: 0 2px 8px 0 rgba(16,30,54,0.07);
+}
+.login-tab {
+  flex: 1;
+  border: none;
+  background: transparent;
+  color: #6b7280;
+  font-weight: 600;
+  font-size: 1.13rem;
+  border-radius: 2.5rem;
+  padding: 0.85rem 0;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  box-shadow: none;
+  outline: none;
+  cursor: pointer;
+}
+.login-tab.active {
+  background: #fff;
+  color: var(--eazy-primary);
+  box-shadow: 0 2px 8px 0 rgba(16,30,54,0.10);
+}
+.login-card .form-label {
+  font-weight: 500;
+  color: #374151;
+  font-size: 1rem;
+  margin-bottom: 0.3rem;
+}
+.login-card .input-group {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.login-card .input-group-text {
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  color: #6b7280;
+  font-size: 1.2rem;
+  z-index: 2;
+  padding: 0;
+  pointer-events: none;
+}
+.login-card .form-control {
+  padding-left: 2.5rem;
+  height: 48px;
+  border-radius: 1.1rem !important;
+  font-size: 1.08rem;
+  background: #fff;
+  box-shadow: none;
+  border: 1.5px solid #e5e7eb;
+  color: #111827;
+}
+.login-card .form-control:focus {
+  box-shadow: 0 0 0 2px #2563eb33;
+  border-color: #2563eb;
+  background: #fff;
+}
+.login-card .search-btn {
+  height: 48px;
+  border-radius: 1.1rem;
+  font-size: 1.13rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(90deg, var(--eazy-primary), var(--eazy-secondary));
+  color: #fff;
+  border: none;
+  box-shadow: 0 2px 8px 0 rgba(16,30,54,0.10);
+  margin-top: 0.5rem;
+  transition: background 0.2s;
+}
+.login-card .search-btn:hover {
+  background: linear-gradient(90deg, #1d4ed8, #0d9488);
+}
+.login-card .form-text {
+  color: #6b7280;
+  font-size: 0.97rem;
+  margin-top: 0.2rem;
+}
+.login-card .text-center.mt-3 {
+  margin-top: 1.2rem !important;
+}
+.login-card a {
+  color: #2563eb;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.login-card a:hover {
+  color: #0d9488;
+  text-decoration: underline;
+} 
