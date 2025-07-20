@@ -80,3 +80,6 @@ Sample listings and images are included in the demo data.
 
 ## 📞 Contact
 For queries, contact the project maintainer. 
+# EazyHut
+EazyHut
+made some changes
