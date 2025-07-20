@@ -1,12 +1,12 @@
 # .gitignore
 # Ignore config file containing secrets
-includes/config.php
+#includes/config.php
 
 # Ignore environment files
 .env
 
 # Ignore uploads and other sensitive folders
-uploads/
+#uploads/
 
 # Ignore node_modules and build outputs
 node_modules/
