@@ -1,6 +1,6 @@
 # .gitignore
 # Ignore config file containing secrets
-#includes/config.php
+includes/config.php
 
 # Ignore environment files
 .env
@@ -19,4 +19,4 @@ Thumbs.db
 
 
 #this is the file of node that should be deleted later
-#src/
+src/
